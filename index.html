@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Global Multispeciality Hospital</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Top Contact Bar -->
+        <div style="background:var(--primary-color); color:white; padding:8px 5%; font-size:0.85rem; display:flex; justify-content:space-between; align-items:center; font-weight:500;">
+            <div style="display:flex; gap:20px;">
+                <span id="nav-contact-phone"><i style="margin-right:5px;">📞</i> Emergency: +91 800-123-4567</span>
+                <span class="hide-mobile" id="nav-contact-email"><i style="margin-right:5px;">📧</i> care@globalhospital.com</span>
+            </div>
+            <div>
+                <span>🕒 24/7 Advanced Care Available</span>
+            </div>
+        </div>
+        <!-- Header -->
+        <header class="main-header" style="position:sticky; top:0; z-index:100; backdrop-filter:blur(12px); background:rgba(255,255,255,0.95); border-bottom:1px solid rgba(0,0,0,0.05); padding: 15px 5%;">
+            <div class="logo" style="display:flex; align-items:center; gap:15px; cursor:pointer; transition:transform 0.3s;" onclick="location.hash='#/'" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <img id="nav-logo" src="img/logo.png" alt="Logo" style="height:55px; width:55px; object-fit:cover; border-radius:12px; box-shadow:var(--shadow-md);">
+                <div>
+                    <h1 id="nav-title" style="font-size:1.6rem; letter-spacing:-0.5px; margin:0; color:var(--text-color);">Global Multispeciality</h1>
+                    <span class="location" style="font-weight:700; color:var(--primary-color); font-size:0.9rem; text-transform:uppercase; letter-spacing:1px;">Kakkanad</span>
+                </div>
+            </div>
+            
+            <div id="public-nav" style="display:flex; gap:25px; font-weight:600; font-size:1rem; align-items:center;">
+                <a href="#/" style="color:var(--text-color); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-color)'">Home</a>
+                <a href="#/departments" style="color:var(--text-color); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-color)'">Departments</a>
+                <a href="#/doctors" style="color:var(--text-color); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-color)'">Find a Doctor</a>
+                <a href="#/login" class="btn btn-primary btn-sm" style="padding:0.5rem 1.2rem; margin-left:10px;">Portal Login</a>
+            </div>
+            
+            <nav id="main-nav" class="hidden" style="display:flex; align-items:center; gap:15px;">
+                <span id="user-role-badge" style="background:var(--primary-color); color:white; padding:5px 12px; border-radius:20px; font-size:0.85rem; font-weight:bold; box-shadow:var(--shadow-sm);"></span>
+                <button id="logout-btn" class="btn btn-secondary btn-sm" style="padding:0.5rem 1rem;">Logout</button>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main id="main-content">
+            <!-- Dynamic components will be rendered here -->
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Global Multispeciality Hospital, Kakkanad. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/store.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
